@@ -28,7 +28,7 @@ export default class NavbarProduct extends Component {
 
 const Nav = styled.nav`
   background: linear-gradient(to bottom, #00cc00 0%, #003300 74%);
-  max-width: 1500px;
+  max-width: 2000px;
   flex-direction: row;
 
   .navbar-image{
