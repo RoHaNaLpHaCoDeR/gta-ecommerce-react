@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { HashLink as Link} from 'react-router-hash-link';
 import './Navbar.css';
 import './Button.css';
 
@@ -37,27 +38,24 @@ function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              <Link smooth to='#' className='nav-links' onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
 
             <li className='nav-item'>
-              <Link
-                to='/products'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
+              <Link smooth to='#products' className='nav-links' onClick={closeMobileMenu}>
                 Products
               </Link>
             </li>
             <li className='nav-item'>
-              <Link
-                to='/services'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
+              <Link smooth to='#services' className='nav-links' onClick={closeMobileMenu}>
                 Services
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link smooth to='#social' className='nav-links' onClick={closeMobileMenu}>
+                Social
               </Link>
             </li>
             <li>

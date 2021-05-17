@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <div className='footer-container'>
+    <div className='footer-container' id="social">
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
           Join the GTA Community newsletter to receive our latest notifications
