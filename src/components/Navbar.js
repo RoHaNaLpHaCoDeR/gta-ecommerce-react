@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
-// import { Link } from 'react-router-dom';
-import { HashLink as Link} from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
+// import { HashLink as Link} from 'react-router-hash-link';
 import './Navbar.css';
 import './Button.css';
+// import {ReloadPage} from "../reloadpage";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -38,23 +39,23 @@ function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link smooth to='#' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
 
             <li className='nav-item'>
-              <Link smooth to='#products' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
                 Products
               </Link>
             </li>
             <li className='nav-item'>
-              <Link smooth to='#services' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
                 Services
               </Link>
             </li>
             <li className='nav-item'>
-              <Link smooth to='#social' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/social' className='nav-links' onClick={closeMobileMenu}>
                 Social
               </Link>
             </li>
@@ -67,7 +68,6 @@ function Navbar() {
                 Register
               </Link>
             </li>
-
             <li>
               <Link
                 to='/customer/access/signin'
@@ -77,7 +77,6 @@ function Navbar() {
                 Sign-in
               </Link>
             </li> 
-
           </ul>
         {button && <Button
           to='/customer/access/signup'
