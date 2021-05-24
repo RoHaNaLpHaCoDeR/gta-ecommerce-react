@@ -65,10 +65,10 @@ function Navbar() {
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                Register
+                Login
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to='/customer/access/signin'
                 className='nav-links-mobile'
@@ -76,22 +76,22 @@ function Navbar() {
               >
                 Sign-in
               </Link>
-            </li> 
+            </li>  */}
           </ul>
         {button && <Button
           to='/customer/access/signup'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
-        Register
+        Login
         </Button>}
-        {button && <Button
+        {/* {button && <Button
           to='/customer/access/signin'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
         >
         Sign-In 
-        </Button>}
+        </Button>} */}
         </div>
       </nav>
     </>

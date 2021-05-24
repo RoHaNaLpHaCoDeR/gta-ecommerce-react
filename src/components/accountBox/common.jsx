@@ -25,8 +25,8 @@ export const MutedLink = styled.a`
 
 export const BoldLink = styled.a`
   color: rgb(0,0,0);
-  font-weight: 600;
-  font-size: 11px;
+  font-weight: 700;
+  font-size: 15px;
   text-decoration: none;
   margin: 0 3px;
 `;
